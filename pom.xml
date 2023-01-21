@@ -26,7 +26,10 @@
     <jacoco.version>0.8.7</jacoco.version>
     <nohttp-checkstyle.version>0.0.10</nohttp-checkstyle.version>
     <spring-format.version>0.0.31</spring-format.version>
-
+    
+    <sonar.host.url>http://54.169.185.64:9000</sonar.host.url>
+    <sonar.projectKey>pet-clinic</sonar.projectKey>
+    <sonar.login>sqp_22f7838d38a8c5242a7ffee149d8b214324540b2</sonar.login>
   </properties>
 
   <dependencies>
@@ -407,6 +410,17 @@
                 </lifecycleMappingMetadata>
               </configuration>
             </plugin>
+            <build>
+              <pluginManagement>
+                <plugins>
+                  <plugin>
+                    <groupId>org.sonarsource.scanner.maven</groupId>
+                    <artifactId>sonar-maven-plugin</artifactId>
+                    <version>3.7.0.1746</version>
+                  </plugin>
+                </plugins>
+              </pluginManagement>
+            </build>
           </plugins>
         </pluginManagement>
       </build>

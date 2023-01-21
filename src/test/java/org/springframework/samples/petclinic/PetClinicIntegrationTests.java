@@ -37,9 +37,7 @@ class PetClinicIntegrationTests {
 
 	@Test
 	public void testTitle() {
-		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 		ChromeOptions options = new ChromeOptions();
-		options.setBinary("/usr/bin/chromedriver");
 		options.addArguments("--headless");
 		WebDriver driver = new ChromeDriver(options);
 		driver.get("http://localhost:" + port);
